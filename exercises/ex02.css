@@ -1,0 +1,12 @@
+p {
+    color: purple;
+}
+
+.highlight_01 {
+    background: tan;
+}
+
+#logo {
+    width: 50%;
+    max-width: 1000px;
+}
