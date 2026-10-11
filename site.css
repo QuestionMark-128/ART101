@@ -1,0 +1,16 @@
+body {
+    background: #e1f3f1;
+    padding: 50px;
+}
+
+h1,
+h2,
+h3 {
+    color: #1d1184;
+    font-family: sans-serif;
+}
+
+img {
+    width: 50%;
+    max-width: 500px;
+}
