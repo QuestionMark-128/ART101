@@ -14,3 +14,67 @@ img {
     width: 50%;
     max-width: 500px;
 }
+
+#page {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background: white;
+    padding: 30px;
+}
+
+.top-section {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin: 0 0 25px 0;
+}
+
+#introduction {
+    background: #f3f7ff;
+    padding: 20px;
+    border-left: 6px solid #1d1184;
+    flex: 2;
+}
+
+#introduction h2 {
+    font-style: italic;
+    margin-top: 0;
+}
+
+#introduction p {
+    font-size: 120%;
+    line-height: 1.5;
+}
+
+.profile {
+    text-align: center;
+    flex: 2;
+}
+
+.profile img {
+    width: 220px;
+    border-radius: 12px;
+}
+
+.profile p {
+    font-size: 90%;
+}
+
+.navigation {
+    background: #fff7e8;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.navigation h2 {
+    margin-top: 0;
+}
+
+.navigation li {
+    margin-bottom: 8px;
+}
+
+.navigation a {
+    color: #1d1184;
+    font-weight: bold;
+}
