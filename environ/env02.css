@@ -3,14 +3,19 @@ body {
     background: radial-gradient(circle at center,rgba(0, 0, 0, 1) 20%, rgba(1, 0, 38, 1) 50%, rgba(16, 0, 117, 1) 100%);
     min-height: 100vh;
     margin: 0;
-} 
+}
 
-#textbox {
-    width: 500px;
+.textboxes {
+    display: flex;
+    gap: 50px;
     position: fixed;
     left: 50%;
     bottom: -50px;
     transform: translate(-50%, -50%);
+}
+
+#textbox1, #textbox2 {
+    width: 250px;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -20,20 +25,42 @@ body {
 }
 
 #top {
+    justify-content: center;
     display: flex;
-    gap: 10px;
+    gap: 500px;
     align-items: flex-start;
-    background: yellow
+    padding: 100px;
 }
 
-#rock {
-    width: 250px;
+#rock-cluster1 img, #rock-cluster2 img {
+    width: 70px;
     height: auto;
+    position: relative;
 }
 
-#main {
-    display: flex;
-    gap: 10px;
+#rock1 {
+    top: 120px;
+}
+#rock2 {
+    top: 50px; 
+}
+#rock3 {
+    top: 0px;
+}
+#rock4 {
+    top: -20px;
+}
+#rock5 {
+    top: -20px; 
+}
+#rock6 {
+    top: 30px; 
+}
+#rock7 {
+    top: 60px; 
+}
+#rock8 {
+    top: 140px; 
 }
 
 #boat {
