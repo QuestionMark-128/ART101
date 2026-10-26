@@ -54,7 +54,6 @@ button {
     height: auto;
     position: relative;
 }
-
 #rock1 {
     top: 120px;
 }
@@ -79,7 +78,6 @@ button {
 #rock8 {
     top: 140px; 
 }
-
 #boat {
     width: 50px;
     height: auto;
@@ -88,7 +86,6 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 #shark {
     width: 300px;
     height: auto;
@@ -124,10 +121,6 @@ button {
 #infoContent h2 {
     color: lightblue;
     margin-top: 5px;
-}
-
-#infoContent ul {
-    text-align: left;
 }
 
 #closePanel {
