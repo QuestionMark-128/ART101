@@ -24,10 +24,27 @@ body {
     border-width: 10px;
 }
 
+.buttonarea {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    border-style: ridge;
+    border-width: 10px;
+    align-items: center;
+}
+
+button {
+    width: 75px;
+    height: 50px;
+    border-color: lightblue;
+    border-radius: 15%;
+    font-size: 20px;
+}
+
 #top {
     justify-content: center;
     display: flex;
-    gap: 500px;
+    gap: 200px;
     align-items: flex-start;
     padding: 100px;
 }
@@ -79,4 +96,47 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#infoPanel {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    max-width: 85%;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border: 5px ridge lightblue;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#info-content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#infoContent h2 {
+    color: lightblue;
+    margin-top: 5px;
+}
+
+#infoContent ul {
+    text-align: left;
+}
+
+#closePanel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
