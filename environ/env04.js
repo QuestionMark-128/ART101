@@ -10,10 +10,11 @@ let mainEntity = {
     isMoving: true,
     favoriteElement: environmentElements[1],
 };
+let crunch = $("#crunch")[0];
 
 let tips = [
     "Its very cold, you should bundle up and stay warm.",
-    "There are at least 4 sharks in the water, swimming would be a death sentence.",
+    "There are at least 4 sharks in the water, touching them would be a death sentence.",
     "Maybe those the water is more shallow by those rocks?",
     "Figure it out yourself stop bothering me!"
 ];
@@ -73,13 +74,34 @@ $(document).ready(function () {
         $("#infoContent").html(message);
         $("#infoPanel").stop(true, true).fadeIn();
     });
+    $("#reset-button").click(function() {
+        $("body").removeClass("sharkAttack");
+        $("#boat").fadeIn(1000);
+        $("#reset-button").fadeOut();
+        crunch.pause();
+        crunch.currentTime = 0;
+        $("#shark-scare").stop(true, true).fadeOut();
 
+    });
     $("#closePanel").click(function () {
         $("#infoPanel").fadeOut();
     });
 });
 
 $("#shark").click(function() {
-    $("body").toggleClass("sharkAttack");
-    $("#boat").fadeToggle(1000);
+    $("body").addClass("sharkAttack");
+    $("#boat").fadeOut(1000);
+    $("#infoPanel").fadeOut();
+    $("#reset-button").fadeIn();
+    $("#shark-scare").fadeIn();
+    $("#shark-scare").fadeOut(5000);
+
+    
+    crunch.play();
+
+    setTimeout(function() {
+        crunch.pause();
+        crunch.currentTime = 0;
+    }, 5000);
 });
+
