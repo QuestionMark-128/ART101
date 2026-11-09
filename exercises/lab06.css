@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+#scene {
+  min-height: 500px;
+  background: lightyellow;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+#creature {
+  width: 120px;
+  height: 120px;
+  background: pink;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  transition: background 0.3s, border-radius 0.3s, transform 0.3s, box-shadow 0.3s;
+  z-index: 2;
+}
+
+#thought {
+  display: none;
+  position: absolute;
+  left: 95px;
+  top: -20px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.transformed {
+  background: lavender;
+  border-radius: 50%;
+  transform: scale(1.2) rotate(10deg);
+}
+
+.following {
+  box-shadow: 0 0 20px black;
+}
+
+#status {
+  font-size: 20px;
+  font-weight: bold;
+}
