@@ -1,0 +1,163 @@
+body {
+    background: #000000;
+    background: radial-gradient(circle at center,rgba(0, 0, 0, 1) 20%, rgba(1, 0, 38, 1) 50%, rgba(16, 0, 117, 1) 100%);
+    min-height: 100vh;
+    margin: 0;
+}
+
+body.sharkAttack {
+    background: radial-gradient(circle at center,rgba(0, 0, 0, 1) 20%, rgb(38, 0, 0) 50%, rgb(117, 0, 0) 100%);
+}
+
+.textboxes {
+    display: flex;
+    gap: 50px;
+    position: fixed;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%, -50%);
+}
+
+#textbox1, #textbox2 {
+    width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-style: ridge;
+    border-width: 10px;
+}
+
+.buttonarea {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    border-style: ridge;
+    border-width: 10px;
+    align-items: center;
+}
+
+button {
+    width: 75px;
+    height: 50px;
+    border-color: lightblue;
+    border-radius: 15%;
+    font-size: 20px;
+}
+#reset-button {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#top {
+    justify-content: center;
+    display: flex;
+    gap: 200px;
+    align-items: flex-start;
+    padding: 100px;
+}
+
+#rock-cluster1 img, #rock-cluster2 img {
+    width: 70px;
+    height: auto;
+    position: relative;
+}
+#rock1 {
+    top: 120px;
+}
+#rock2 {
+    top: 50px; 
+}
+#rock3 {
+    top: 0px;
+}
+#rock4 {
+    top: -20px;
+}
+#rock5 {
+    top: -20px; 
+}
+#rock6 {
+    top: 30px; 
+}
+#rock7 {
+    top: 60px; 
+}
+#rock8 {
+    top: 140px; 
+}
+#boat {
+    width: 50px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#shark {
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#shark-scare {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;
+}
+
+#shark:hover {
+    cursor: pointer;
+}
+
+#infoPanel {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    max-width: 85%;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border: 5px ridge lightblue;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#info-content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#infoContent h2 {
+    color: lightblue;
+    margin-top: 5px;
+}
+
+#closePanel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#rock-cluster1 img, #rock-cluster2 img {
+    cursor: pointer; 
+}
