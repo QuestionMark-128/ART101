@@ -78,7 +78,9 @@ button:hover {
     top: -20px;
 }
 #rock5 {
-    top: -20px; 
+    top: -20px;
+    z-index: 1;
+    cursor: pointer;
 }
 #rock6 {
     top: 30px; 
@@ -160,4 +162,19 @@ button:hover {
 }
 #rock-cluster1 img, #rock-cluster2 img {
     cursor: pointer; 
+}
+
+#rock-cluster2 {
+    position: relative;
+}
+
+#treasure {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: -15px;
+    left: -80px;
+    z-index: 0;
+    cursor: pointer;
+    display: none;
 }

@@ -126,8 +126,16 @@ $("#rock4").click(function() {
         .animate({ top: "+=20px" }, 300)
         .animate({ top: "-=20px" }, 300);
 });
+let rock5Moved = false;
 $("#rock5").click(function() {
-    $("#rock5").animate({ top: "-=60px" }, 300);
+    if (rock5Moved == false) {
+        $("#rock5").animate({ top: "-=60px" }, 300);
+        $("#treasure").fadeIn(500);
+        rock5Moved = true;
+    } else {
+        $("#rock5").animate({ top: "+=60px" }, 300);
+        rock5Moved = false;
+    }
 });
 $("#rock6").click(function() {
     $("#rock6")
@@ -147,3 +155,17 @@ $("#rock8").click(function() {
         .animate({ top: "-=20px" }, 300);
 });
 
+let itemCollected = false;
+
+$("#treasure").click(function() {
+    if (itemCollected == false) {
+        itemCollected = true;
+        $("#treasure").fadeOut();
+        let message = `
+            <h2>Treasure Collected!</h2>
+            <p>You found something hidden underneath the rock!</p>
+        `;
+        $("#infoContent").html(message);
+        $("#infoPanel").stop(true, true).fadeIn();
+    }
+});
